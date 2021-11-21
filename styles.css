@@ -1,0 +1,24 @@
+.jumbotron {
+    background-image: url(images/battleropes.jpg);
+}
+
+#freeWeights {
+    size: 250px;
+}
+
+.row-content {
+    padding: 40px;
+    margin: 1px;
+}
+
+body {
+    background-color: rgb(224, 224, 224);
+}
+
+.site-footer {
+    background-color: rgb(255, 147, 147);
+}
+
+#freeWeights {
+    margin: 0px;
+}

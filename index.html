@@ -11,13 +11,13 @@
     <!-- Additional CSS must be placed after Bootstrap CSS -->
     <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css" />
-    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" />
 
 </head>
 <body>
 
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
         <a class="navbar-brand" href="#" id="xfLogo">XF</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -26,26 +26,13 @@
           <div class="navbar-nav">
             <a class="nav-item nav-link active" href="#">Gym Home <span class="sr-only">(current)</span></a>
             <a class="nav-item nav-link" href="#"> Amenities </a>
-            <a class="nav-item nav-link" href="#"> Membership Options </a>
-            <a class="nav-item nav-link" href="#"> Testimonials</a>
+            <a class="nav-item nav-link" href="memberships.html"> Membership Options </a>
           </div>
         </div>
+        <button role="button" class="btn btn-danger align-content-end">
+            <a class="text-white" href="memberships.html">Join Us!</a>
+        </button>
       </nav>
-
-
-<div class="container">
-    <div class="row">
-        <div class="col">
-
-        </div>
-    </div>
-</div>
-
-<div class="container">
-    <div class="row">
-        <div class="col"></div>
-    </div>
-</div>
 
 
 
@@ -68,11 +55,30 @@
 
 
 
-
 <div class="container">
+
+    
+    <div class="row row-content" id="gymAmeneties">
+        <div class="col" id="freeWeights">
+            <h3 class="">Free Weights</h3>
+            <img src="/images/john-arano-h4i9G-de7Po-unsplash.jpg" alt="Free Weights">
+        </div>
+        <div class="col" id="cardioEquipment">
+            <h3 class="">Cardio Equipment</h3>
+            <img src="/images/victor-freitas-KkYWWpurqbE-unsplash.jpg" alt="Cardio Equipment">
+        </div>
+        <div class="col" id="pool">
+            <h3 class="">Pool/Sauna</h3>
+            <img src="/images/nelka-sGIp9xdj7kA-unsplash.jpg" alt="Pool">
+        </div>
+    </div>
+
+
+
+
     <div class="row row-content">
         <div class="col-12">
-            <h2>Free Trial Sign Up</h2>
+            <h2 class="text-danger">Free Trial Sign Up</h2>
             <hr />
         </div>
         <div class="col-md-10">
@@ -105,6 +111,12 @@
                     </div>
                 </div>
                 <div class="form-group row">
+                    <label for="goals" class="col-md-2 col-form-label">What are your goals?</label>
+                    <div class="col-md-10">
+                        <input type="email" class="form-control" id="goals" name="goals" placeholder="" />
+                    </div>
+                </div>
+                <div class="form-group row">
                     <div class="col offset-md-2">
                         May we contact you?
                         <div class="form-check form-check-inline">
@@ -125,6 +137,10 @@
             </form>
         </div>
    </div>
+
+   
+
+
 </div>
 
 
@@ -134,6 +150,24 @@
 
 
     <footer class="site-footer">
+        <div class="row">
+            <div class="col col-2 offset-4">
+                <div class="card border-danger" id="clubLocation">
+                    <h4 class="card-header border-danger">Club Address</h4>
+                    <p class="card-body">1 Moore Rep Avenue Gainzville, TN 12345</p>
+                </div>
+            </div>
+            <div class="col col-2 align-items-center">
+                <div class="card border-danger" id="clubHours">
+                    <h4 class="card-header border-danger">Staffed Hours</h4>
+                    <p class="card-body">
+                        Mon - Thurs: 9 am - 9 pm
+                        Friday: 9 am - 5 pm
+                        Saturday: 10 am - 3 pm
+                    </p>
+                </div>
+            </div>
+        </div>
         <div class="row bg-danger">
             <div class="col text-white text-left ml-3">
                 <a class="text-white" href="#">Home</a>
