@@ -1,0 +1,19 @@
+<div class="row row-content text-center">
+    <div class="col">
+        <h1>Amenities</h1>
+    </div>
+</div>
+
+
+<div class="container">
+        <div class="row">
+            <div class="col">Membership Option One</div>
+            <div class="col">Membership Option Two</div>
+        </div>
+</div>
+
+$(function(){
+    $("#baseMembership").hover(function(){
+        
+    })
+}
