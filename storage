@@ -17,3 +17,6 @@ $(function(){
         
     })
 }
+
+const inputEl = document.querySelector("input");
+inputEl.addEventListener("keyup", fixLength);

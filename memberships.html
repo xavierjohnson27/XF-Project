@@ -44,7 +44,7 @@
     
     
         <div class="row row-content pb-5">
-            <div class="col">
+            <div class="col" id="baseMembership">
                 <div class="card">
                     <div class="card-header">
                         <h2 class="text-center">Base Membership</h2>
@@ -57,24 +57,27 @@
                             <li> 1 FREE fitness assessment + Personal Training session</li>
                         </ul>
                         <h1 class="text-center">$19.99/mo</h1>
-                        <button class="btn btn-dark">Sign Up Now</button>
+                        <button class="btn btn-dark" id="baseButton">Sign Up Now</button>
                     </div>
                 </div>
             </div>
-            <div class="col">
+            <div class="col" id="premMembership">
                 <div class="card">
                     <div class="card-header bg-danger">
                         <h2 class="text-center text-white">Premium Membership</h2>
                     </div>
                     <div class="card-body">
                         <ul>
-                            <li>All features of the base memmbership plus:</li>
+                            <li>24 Hr access</li>
+                            <li>Access to Pool, Hot Tub and Steam Room/Sauna</li>
+                            <li>Unlimited group exercise classes included: ZUMBA, Kickboxing, Yoga and more!</li>
+                            <li> 1 FREE fitness assessment + Personal Training session</li>
                             <li>Unlimited Guest Privelages</li>
                             <li>Access to all other clubs nationwide</li>
                             <li> 1 FREE fitness assessment + Personal Training session</li>
                         </ul>
                         <h1 class="text-danger text-center">$29.99/mo</h1>
-                        <button class="btn btn-dark">Sign Up Now</button>
+                        <button class="btn btn-dark" id="premButton">Sign Up Now</button>
                     </div>
                 </div>
             </div>
@@ -83,65 +86,68 @@
     
     
         <div class="row row-content">
-            <div class="col-12">
-                <h2 class="text-danger">Free Trial Sign Up</h2>
-                <hr />
-            </div>
-            <div class="col-md-10">
-                <form>
-                    <div class="form-group row">
-                        <label for="firstName" class="col-md-2 col-form-label">First Name</label>
-                        <div class="col-md-10">
-                            <input type="text" class="form-control" id="firstName" name="firstName" placeholder="First Name" />
+                <div class="col-md-10">
+                    <div class="card border-5 border-danger offset-2">
+                        <div class="card-header">
+                            <h2 class="text-danger text-center">Free Trial Sign Up</h2>
+                        </div>
+                        <div class="card-body">
+                            <form>
+                                <div class="form-group row">
+                                    <label for="firstName" class="col-md-2 col-form-label">First Name</label>
+                                    <div class="col-md-10">
+                                        <input type="text" class="form-control" id="firstName" name="firstName" placeholder="First Name" />
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label for="lastName" class="col-md-2 col-form-label">Last Name</label>
+                                    <div class="col-md-10">
+                                        <input type="text" class="form-control" id="lastName" name="lastName" placeholder="Last Name" />
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label for="areaCode" class="col-md-2 col-form-label">Contact Tel.</label>
+                                    <div class="col-5 col-md-3">
+                                        <input type="tel" class="form-control" id="areaCode" name="areaCode" placeholder="Area code" />
+                                    </div>
+                                    <div class="col-7">
+                                        <input type="tel" class="form-control" name="telNum" placeholder="Tel. number" />
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label for="email" class="col-md-2 col-form-label">Email</label>
+                                    <div class="col-md-10">
+                                        <input type="email" class="form-control" id="email" name="email" placeholder="Email" />
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label for="goals" class="col-md-2 col-form-label">What are your goals?</label>
+                                    <div class="col-md-10">
+                                        <input type="email" class="form-control" id="goals" name="goals" placeholder="" />
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <div class="col offset-md-2">
+                                        May we contact you?
+                                        <div class="form-check form-check-inline">
+                                            <input type="radio" class="form-check-input" id="contactYes" name="contactRadios" value="yes" />
+                                            <label for="contactYes" class="form-check-label">Yes</label>
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                            <input type="radio" class="form-check-input" id="contactNo" name="contactRadios" value="no" />
+                                            <label for="contactNo" class="form-check-label">No</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <div class="offset-md-2 col-md-10">
+                                        <button type="submit" class="btn btn-danger">Submit</button>
+                                    </div>
+                                </div>
+                            </form>
                         </div>
                     </div>
-                    <div class="form-group row">
-                        <label for="lastName" class="col-md-2 col-form-label">Last Name</label>
-                        <div class="col-md-10">
-                            <input type="text" class="form-control" id="lastName" name="lastName" placeholder="Last Name" />
-                        </div>
-                    </div>
-                    <div class="form-group row">
-                        <label for="areaCode" class="col-md-2 col-form-label">Contact Tel.</label>
-                        <div class="col-5 col-md-3">
-                            <input type="tel" class="form-control" id="areaCode" name="areaCode" placeholder="Area code" />
-                        </div>
-                        <div class="col-7">
-                            <input type="tel" class="form-control" name="telNum" placeholder="Tel. number" />
-                        </div>
-                    </div>
-                    <div class="form-group row">
-                        <label for="email" class="col-md-2 col-form-label">Email</label>
-                        <div class="col-md-10">
-                            <input type="email" class="form-control" id="email" name="email" placeholder="Email" />
-                        </div>
-                    </div>
-                    <div class="form-group row">
-                        <label for="goals" class="col-md-2 col-form-label">What are your goals?</label>
-                        <div class="col-md-10">
-                            <input type="email" class="form-control" id="goals" name="goals" placeholder="" />
-                        </div>
-                    </div>
-                    <div class="form-group row">
-                        <div class="col offset-md-2">
-                            May we contact you?
-                            <div class="form-check form-check-inline">
-                                <input type="radio" class="form-check-input" id="contactYes" name="contactRadios" value="yes" />
-                                <label for="contactYes" class="form-check-label">Yes</label>
-                            </div>
-                            <div class="form-check form-check-inline">
-                                <input type="radio" class="form-check-input" id="contactNo" name="contactRadios" value="no" />
-                                <label for="contactNo" class="form-check-label">No</label>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="form-group row">
-                        <div class="offset-md-2 col-md-10">
-                            <button type="submit" class="btn btn-danger">Submit</button>
-                        </div>
-                    </div>
-                </form>
-            </div>
+                </div>
        </div>
     
        
@@ -158,13 +164,13 @@
         <footer class="site-footer">
 
             <div class="row bg-danger">
-                <div class="col text-white text-left ml-3">
+                <div class="col text-white text-center ml-3">
                     <a class="text-white" href="#">Home</a>
                     <a class="text-white" href="#"> | Free Trial</a>
                     <a class="text-white" href="#"> | Join Online</a>
                     <a class="text-white" href="#"> | Testimonials</a>
                 </div>
-                <div class="col">
+                <div class="col text-center">
                     <a href="http://instagram.com/"><i class="fa fa-instagram text-white"></i></a>
                     <a href="http://facebook.com/"><i class="fa fa-facebook text-white"></i></a>
                     <a href="http://twitter.com/"><i class="fa fa-twitter text-white"></i></a>
